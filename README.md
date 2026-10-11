@@ -242,25 +242,6 @@ To demonstrate the application immediately without tedious data entry, the app c
 
 ---
 
-## 🎓 College Project / Viva Presentation Guide
-
-### 1. Key Talking Points for Project Review
-- **Integrated Architecture:** Most student projects only do one thing (a basic resume parser OR a generic quiz). CareerAI Coach connects all modules in a closed feedback loop:
-  $$\text{Resume Diagnosis} \longrightarrow \text{Skill Gaps} \longrightarrow \text{4-Week Study Schedule} \longrightarrow \text{Mock Interview} \longrightarrow \text{Readiness Score}$$
-- **Multilingual Support for Tier-2/Tier-3 Colleges:** Emphasize that regional language support (Tamil, Hindi, Telugu, etc.) with the **"Explain Question"** feature bridges conceptual understanding gaps for non-native English speakers while still preparing them for corporate English technical rounds.
-- **Algorithmic ATS Scoring:** Explain that the ATS indicator uses verified keyword density and section structure parsing rather than opaque black-box claims.
-- **Client-Side Data Privacy:** Highlight that candidate resumes and speech transcripts stay local to the browser's storage rather than being broadcasted to third parties.
-
-### 2. Common Viva Questions & Answers
-
-**Q1: How does the "Explain Question" feature prevent cheating?**  
-*Answer:* The prompt configuration strictly clarifies the underlying concept (e.g., explaining dynamic method dispatch in Tamil) rather than reciting the solution or code snippet. The candidate must still independently articulate the answer.
-
-**Q2: How does the system adapt to multiple job roles?**  
-*Answer:* Each selected role maintains independent keyword dictionaries, benchmark requirements, and question banks. Toggling between *Software Developer* and *Python Developer* re-evaluates the active resume against that specific role's standards without erasing data.
-
-**Q3: Can a real LLM API (OpenAI/Gemini/Claude) be connected?**  
-*Answer:* Yes. All AI operations are encapsulated inside `src/services/aiService.ts`. Swapping the mock responses for live API calls requires editing only this service layer while leaving all UI components intact.
 
 ---
 
